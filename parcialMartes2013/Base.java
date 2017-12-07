@@ -75,7 +75,7 @@ public class Base
 		return NOMBRE;
 	}
 	
-	public void Delete() //Borra el objeto de la BD y deja el código a -1
+	public void Delete() //Borra el objeto de la BD y deja el cÃ³digo a -1
 	{
 		// Actualiza el atributo en memoria y en la base de datos
     	BD miBD = new BD(BD_SERVER,BD_NAME);
