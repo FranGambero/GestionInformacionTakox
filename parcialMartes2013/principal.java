@@ -30,7 +30,7 @@ public class principal
 		Consulta_B();
 		Consulta_C();
 		
-		System.out.println("Ejecución Finalizada");
+		System.out.println("EjecuciÃ³n Finalizada");
 	}
 	
 	public static void CargarBases(String FileName)
@@ -38,15 +38,15 @@ public class principal
 		try
 		{
 			BufferedReader bfr = new BufferedReader(new FileReader(FileName));
-			String línea = bfr.readLine();
-			while (línea != null) 
+			String lÃ­nea = bfr.readLine();
+			while (lÃ­nea != null) 
 			{
-				StringTokenizer líneaPalabras = new StringTokenizer(línea,";");
-				int id = Integer.parseInt(líneaPalabras.nextToken());
-				String n = líneaPalabras.nextToken();
+				StringTokenizer lÃ­neaPalabras = new StringTokenizer(lÃ­nea,";");
+				int id = Integer.parseInt(lÃ­neaPalabras.nextToken());
+				String n = lÃ­neaPalabras.nextToken();
 				// COMPLETAR	
-				Base b = new Base(id,n); //añadido esto
-				línea = bfr.readLine();
+				Base b = new Base(id,n); //aÃ±adido esto
+				lÃ­nea = bfr.readLine();
 			}
 			bfr.close();
 		}
@@ -61,21 +61,21 @@ public class principal
 		try
 		{
 			BufferedReader bfr = new BufferedReader(new FileReader(FileName));
-			String línea = bfr.readLine();
-			while (línea != null) 
+			String lÃ­nea = bfr.readLine();
+			while (lÃ­nea != null) 
 			{
-				StringTokenizer líneaPalabras = new StringTokenizer(línea,";");
-				String c = líneaPalabras.nextToken();
-				Base b = new Base(Integer.parseInt(líneaPalabras.nextToken()));
-				String n = líneaPalabras.nextToken();
-				int l = Integer.parseInt(líneaPalabras.nextToken());
-				String s = líneaPalabras.nextToken();
-				String e = líneaPalabras.nextToken();
-				String f = líneaPalabras.nextToken();
+				StringTokenizer lÃ­neaPalabras = new StringTokenizer(lÃ­nea,";");
+				String c = lÃ­neaPalabras.nextToken();
+				Base b = new Base(Integer.parseInt(lÃ­neaPalabras.nextToken()));
+				String n = lÃ­neaPalabras.nextToken();
+				int l = Integer.parseInt(lÃ­neaPalabras.nextToken());
+				String s = lÃ­neaPalabras.nextToken();
+				String e = lÃ­neaPalabras.nextToken();
+				String f = lÃ­neaPalabras.nextToken();
 				
 				// COMPLETAR
 				Aminoacido amino = new Aminoacido(c,b,n,l,s,e,f);
-				línea = bfr.readLine();
+				lÃ­nea = bfr.readLine();
 			}
 			bfr.close();
 		}
