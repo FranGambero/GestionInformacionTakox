@@ -143,7 +143,7 @@ public class Aminoacido
 		return LONGITUD_SECUENCIA;
 	}
 	
-	public void Delete() //Borra el objeto de la BD y deja el código a ""
+	public void Delete() //Borra el objeto de la BD y deja el cÃ³digo a ""
 	{
 		BD miBD = new BD(BD_SERVER, BD_NAME);
 		miBD.Delete("DELETE FROM AMINOACIDO WHERE cod_amino = '"+ this.CODIGO + "';");
